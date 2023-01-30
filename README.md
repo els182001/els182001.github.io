@@ -8,7 +8,9 @@
 ## **IN-CLASS ASSIGNMENTS**
 
 - ICA1
+https://docs.google.com/document/d/1TWue_zF8pVu3YNmICmz8onRD3MLxUev_2OrMscqOwhY/edit
 - ICA2
+https://docs.google.com/document/d/1Umo66-5B99O7FXu4gUH2EmZURhyCAi4VDL1KciL36jw/edit
 - ICA3
 - ICA4
 - ICA5
@@ -26,7 +28,9 @@
 ## **WEEKLY ASSIGNMENTS**
 
 - WA1
+https://els182001.github.io/wa1.html
 - WA2
+
 - WA3
 - WA4
 - WA5

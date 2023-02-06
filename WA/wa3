@@ -8,11 +8,16 @@
 </head>
 <body>
     <h1>
-        baseball leagues
+        Major League Beaseball
     </h1>
-    <h2>
-        Major League Baseball
-    </h2>
+    <nav>
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Major_League_Baseball">Origional Wikipedia link</a></li>
+            
+        </ul>
+    </nav>
+
     <h3>
         national  league
         American League

@@ -12,3 +12,44 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     border-bottom: 10px dotted purple;
   }
+
+  .container{
+    position: relative;
+    Width: 1000px;
+    height: 1000px;
+    display: inline-block;
+  }
+
+  .image1{
+    display: block;
+    width: 800px;
+    height: 800px;
+  }
+
+  .overlay{
+    position: absolute;
+    top: 10mm;
+    left: 12mm;
+    opacity: 100;
+  }
+
+  .score{
+    position:absolute;
+    width:100px;
+    height:100px;
+
+  }
+
+  .overlay2{
+    position: absolute;
+    top: 170mm;
+    left:170mm;
+    opacity: 100;
+
+  }
+
+  .trophy{
+    position: absolute;
+    width: 100px;
+    height:100px;
+  }

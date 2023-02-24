@@ -1,0 +1,125 @@
+body {
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+  }
+
+  img {
+      max-width: 100%;
+      display: block;
+
+  }
+  
+  .logo {
+    font-size: 200%;
+    padding: 50px 20px;
+    margin: 0 auto;
+    max-width: 980px;
+  }
+  
+  .grid {
+    
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 980px;
+    /* .grid for photos on right side of page*/
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+   
+
+  }
+  
+  nav {
+    background-color: #000;
+    padding: .5em;
+    /*nav bar that sticks to the top of page*/
+    position: sticky;
+    top:0;
+   
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* nav bar word spacing*/
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: .5em 3em;
+  }
+
+  
+  .photos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /*photos in grid with margin*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px
+  }
+
+
+  /*main photo sizing*/
+  .feature {
+      width: 200px;
+  }
+/*wrap text around img*/
+  .feature {
+    float:left;
+    margin-right: 10px;
+  }
+
+/*column  shrink for photos as the page moves*/
+  .aside img{
+    max-width:100px;
+    float:left;
+  }
+
+
+
+  
+/*page  shrink transformation*/
+  @media screen and (max-width: 500px){
+
+    body{
+      background-color: aqua;
+    }
+    nav ul{
+      display:block;
+    }
+    .feature{
+      float: none;
+      margin-right: 10px;
+    }
+    .grid{
+      display:block;
+    }
+  }
+
+
+  /*
+  @media screen and (min-width: 500px){
+
+    body{
+      background-color: pink;
+    }
+    nav ul{
+      display:block;
+    }
+    .feature{
+      float: none;
+      margin-right: 10px;
+    }
+    .grid{
+      display:block;
+    }
+  }
+

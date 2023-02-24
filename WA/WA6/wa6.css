@@ -105,21 +105,24 @@ body {
   }
 
 
-  /*
-  @media screen and (min-width: 500px){
-
+  
+  @media only screen and (max-height: 500px){
     body{
       background-color: pink;
+
     }
     nav ul{
-      display:block;
+      display: block;
+
     }
+
     .feature{
-      float: none;
-      margin-right: 10px;
+      float:none;
+      margin-right:10px;
+
     }
+
     .grid{
       display:block;
     }
   }
-

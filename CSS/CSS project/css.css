@@ -140,7 +140,7 @@ body {
     animation-direction: alternate;
 
 }
-/* this could help on project
+/* 
 @keyframes box2move{
     0%{background-color: pink; height: 40vh; }
     50%{background-color: blue;height: 100vh;}

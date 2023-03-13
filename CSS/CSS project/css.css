@@ -1,0 +1,156 @@
+body {
+    background-color: rgb(105, 98, 98);
+    color: black;
+    margin: 0;
+    font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+  }
+
+  img {
+      max-width: 100%;
+      display: block;
+
+  }
+  
+  .logo {
+    font-size: 400%;
+    padding: 50px 20px;
+    margin: 0 auto;
+    max-width:1100px;
+    background-color: gray;
+  }
+  
+  .grid {
+    
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1100px;
+    /* .grid for photos on right side of page*/
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+   
+
+  }
+  
+  nav {
+    background-color: #000;
+    padding: .5em;
+    /*nav bar that sticks to the top of page*/
+    position: sticky;
+    top:0;
+   
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* nav bar word spacing*/
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: .5em 3em;
+  }
+
+  
+  .photos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /*photos in grid with margin*/
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    gap: 1px
+  }
+
+
+  /*main photo sizing*/
+  .feature {
+      width: 200px;
+  }
+/*wrap text around img*/
+  .feature {
+    float:left;
+    margin-right: 10px;
+  }
+
+/*column  shrink for photos as the page moves*/
+  .aside img{
+    max-width:100px;
+    float:left;
+  }
+
+
+
+  
+/*page  shrink transformation*/
+  @media screen and (max-width: 500px){
+
+    body{
+      background-color: aqua;
+    }
+    nav ul{
+      display:block;
+    }
+    .feature{
+      float: none;
+      margin-right: 10px;
+    }
+    .grid{
+      display:block;
+    }
+  }
+
+
+  
+  @media only screen and (max-height: 500px){
+    body{
+      background-color: pink;
+
+    }
+    nav ul{
+      display: block;
+
+    }
+
+    .feature{
+      float:none;
+      margin-right:10px;
+
+    }
+
+    .grid{
+      display:block;
+    }
+  }
+
+
+  #box2{
+    width: 25vw;
+    height:20vh;
+    position: relative;
+    background-color:whitesmoke;
+    animation-name: box2move;
+    animation-iteration-count: 10;
+    animation-duration: 120s;
+    animation-direction: alternate;
+
+}
+/* this could help on project
+@keyframes box2move{
+    0%{background-color: pink; height: 40vh; }
+    50%{background-color: blue;height: 100vh;}
+    100%{background-color: orangered; height: 300vh;}
+}
+*/
+@keyframes box2move{
+    0%{left:0; top:0}
+    25%{left: 75vw; top: 0}
+    50%{left:75vw; top: 80vh;}
+    75%{left:0vw; top: 80vh;}
+    100%{left: 0;top:0;}
+}

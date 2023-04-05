@@ -17,6 +17,10 @@ async function getQuote(){
         //console.log(json.question);
         displayQuote(json.question);
         showAnswer(json.answer);
+        
+
+        const answerButton = document.querySelector("#js-tweet");
+        answerButton.addEventListener('click, showAnswer(json.answer)');
 
     }
     catch (err) {

@@ -20,7 +20,7 @@ async function getQuote(){
         
 
         const answerButton = document.querySelector("#js-tweet");
-        answerButton.addEventListener('click, showAnswer(json.answer)');
+        answerButton.addEventListener('click', showAnswer(json.answer));
 
     }
     catch (err) {

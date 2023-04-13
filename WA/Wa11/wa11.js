@@ -4,7 +4,7 @@ button.addEventListener('click', getQuote);
 //const answerButton = document.querySelector("#js-tweet");
 //answerButton.addEventListener('click, showAnswer');
 
-const endpoint = "https://api.api-ninjas.com/v1/quotes?category";
+const endpoint = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1";
 
 async function getQuote(){
     //console.log("It works");

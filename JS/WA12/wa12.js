@@ -33,3 +33,56 @@ let techStars = {
 }
 
 console.log('P2',techStars);
+
+//Problem 3
+
+let anna = {
+    firstName: 'Anna',
+    department: 'Tech',
+    designation: 'Executive',
+    salary: 25600,
+    raiseEligible: false
+}
+
+
+employees.push(anna);
+console.log('P3', techStars);
+
+//Problem 4
+
+let totalSalary=0;
+
+for(let i = 0; i<employees.length; i++){
+    totalSalary += employees[i].salary;
+}
+
+console.log('P4', totalSalary)
+
+//Problem 5
+
+function giveRaises(){
+    for(let i = 0; i < employees.length; i++){
+        if(employees[i].raiseEligible){
+            employees[i].salary*0.1;
+            employees[i].raiseEligible=false;
+        }
+    }
+}
+
+giveRaises()
+console.log('P5', techStars);
+
+//Problem 6
+
+let wfhEmployees = ['Anna','Same'];
+
+for(let i = 0; i<employees.length; i++){
+    if(wfhEmployees.includes(employees[i].firstName)){
+        employees[i].wfh=true;
+
+    }else{
+        employees[i].wfh=false;
+    }
+}
+
+console.log('P6',techStars);

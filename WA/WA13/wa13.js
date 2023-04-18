@@ -5,7 +5,7 @@ function check() {
 }
 
 function submit() {
-    alert(output.textContent);
+    alert('your vomue is now: ' + output.textContent);
 }
 
 function reset() {
